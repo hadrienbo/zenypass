@@ -19,6 +19,8 @@ import AuthorizationCard, { AuthorizationCardProps } from './authorization-card'
 import AuthorizedBrowserCard, { AuthorizedBrowserCardProps } from './authorized-browser-card'
 import AutoformatRecordField, { AutoformatProps } from './autoformat-record-field'
 import Button, { ButtonProps } from './button'
+import ConnexionCard, { ConnexionCardProps } from "./connexion-card"
+import ConnexionPage, { ConnexionPageProps } from "./connexion-page"
 import CopyButton, { CopyButtonProps } from './copy-button'
 import ControlledInput, { ControlledInputProps } from './controlled-input'
 import ControlledAuthenticationModal, {
@@ -47,6 +49,8 @@ export {
   AuthorizedBrowserCard, AuthorizedBrowserCardProps,
   AutoformatRecordField, AutoformatProps,
   Button, ButtonProps,
+  ConnexionCard, ConnexionCardProps,
+  ConnexionPage, ConnexionPageProps,
   CopyButton, CopyButtonProps,
   ControlledInput, ControlledInputProps,
   ControlledAuthenticationModal, ControlledAuthenticationModalProps,
@@ -57,5 +61,5 @@ export {
   IconLabelInputGroup, IconLabelInputGroupProps,
   Input, InputProps,
   RecordField, RecordFieldProps,
-  RecordForm, RecordFormProps, Record
+  RecordForm, RecordFormProps, Record,
 }
