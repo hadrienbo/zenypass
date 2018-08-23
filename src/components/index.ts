@@ -19,8 +19,6 @@ import AuthorizationCard, { AuthorizationCardProps } from './authorization-card'
 import AuthorizedBrowserCard, { AuthorizedBrowserCardProps } from './authorized-browser-card'
 import AutoformatRecordField, { AutoformatProps } from './autoformat-record-field'
 import Button, { ButtonProps } from './button'
-import ConnexionCard, { ConnexionCardProps } from "./connexion-card"
-import ConnexionPage, { ConnexionPageProps } from "./connexion-page"
 import CopyButton, { CopyButtonProps } from './copy-button'
 import ControlledInput, { ControlledInputProps } from './controlled-input'
 import ControlledAuthenticationModal, {
@@ -42,6 +40,13 @@ import IconLabelInputGroup, { IconLabelInputGroupProps } from './icon-label-inpu
 import Input, { InputProps } from './input'
 import RecordField, { RecordFieldProps } from './record-field'
 import RecordForm, { RecordFormProps, Record } from './record-form'
+import BasicPage from './basic-page'
+import AgentAuthorizationCard from './agent-authorization-card'
+import SigninCard from './signin-card'
+import SigninPage from './signin-page'
+import SignupCard from './signup-card'
+import SignupPage from './signup-page'
+import TnCsCard from './TnCs-card'
 
 export {
   AuthenticationModal, AuthenticationModalProps,
@@ -49,8 +54,6 @@ export {
   AuthorizedBrowserCard, AuthorizedBrowserCardProps,
   AutoformatRecordField, AutoformatProps,
   Button, ButtonProps,
-  ConnexionCard, ConnexionCardProps,
-  ConnexionPage, ConnexionPageProps,
   CopyButton, CopyButtonProps,
   ControlledInput, ControlledInputProps,
   ControlledAuthenticationModal, ControlledAuthenticationModalProps,
@@ -62,4 +65,11 @@ export {
   Input, InputProps,
   RecordField, RecordFieldProps,
   RecordForm, RecordFormProps, Record,
+  BasicPage,
+  AgentAuthorizationCard,
+  SigninCard,
+  SigninPage,
+  SignupCard,
+  SignupPage,
+  TnCsCard
 }

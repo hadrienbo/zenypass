@@ -75,8 +75,8 @@ export default function ({
   onChange,
   onCopyPassword,
   onToggleCleartext,
-  icons = DEFAULT_ICONS,
-  placeholders = DEFAULT_PLACEHOLDERS,
+  icons,// = DEFAULT_ICONS
+  placeholders,// = DEFAULT_PLACEHOLDERS,
   locale,
   ...attrs
 }: Partial<RecordFormProps>) {

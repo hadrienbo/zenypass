@@ -17,8 +17,6 @@ import createControlledInput, { ControlledInputProps } from './controlled-input'
 import createAuthenticationModal, { ControlledAuthenticationModalProps } from './controlled-authentication-modal'
 import createCopyButton, { CopyButtonProps } from './copy-button'
 import createControlledAuthorization, { ControlledAuthorizationProps } from './controlled-authorization'
-import ConnexionCard from "../components/connexion-card";
-import ConnexionPage from "../components/connexion-page";
 
 export {
   Component,
@@ -31,7 +29,5 @@ export {
   createControlledInput, ControlledInputProps,
   createAuthenticationModal, ControlledAuthenticationModalProps,
   createCopyButton, CopyButtonProps,
-  createControlledAuthorization, ControlledAuthorizationProps,
-  ConnexionCard,
-  ConnexionPage
+  createControlledAuthorization, ControlledAuthorizationProps
 }

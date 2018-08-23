@@ -2,7 +2,7 @@
 /** @jsx createElement */
 import { createElement } from 'create-element'
 import { storiesOf } from '@storybook/react'
-import { ConnexionPage } from 'components'
+import { BasicPage, TnCsCard } from 'components'
 import { action } from '@storybook/addon-actions'
 import preventDefault from './helpers/prevent-default-action'
 
@@ -11,10 +11,14 @@ const attrs = {
   onLangSelect: action('LANG_SELECT')
 }
 
-storiesOf('ConnexionPage', module)
-  .add('signup', () => (
-    <ConnexionPage signup {...attrs} />
+storiesOf('TnCsPage', module)
+  .add('default', () => (
+    <BasicPage>
+      <TnCsCard {...attrs} />
+    </BasicPage>
   ))
-  .add('signin', () => (
-    <ConnexionPage {...attrs} />
+  .add('disabled', () => (
+    <BasicPage>
+      <TnCsCard buttonDisabled {...attrs} />
+    </BasicPage>
   ))
