@@ -12,16 +12,15 @@
  * Limitations under the License.
  */
 //
-
+/** @jsx createElement */
 import {
-  createControlledInput,
-  ControlledInputProps,
-  ComponentClass
-} from 'hocs'
-import Input, { InputProps } from './input'
+    createControlledAuthorizationPage,
+    ControlledAuthorizationPageProps,
+    ComponentClass
+  } from 'hocs'
+import AuthorizationPage, { AuthorizationPageProps } from './authorization-page'
 
-export default createControlledInput(
-  Input
-)
-
-export { ControlledInputProps, ComponentClass }
+export { ControlledAuthorizationPageProps, ComponentClass }
+export default createControlledAuthorizationPage <AuthorizationPageProps>(
+  AuthorizationPage
+) as ComponentClass<ControlledAuthorizationPageProps>
