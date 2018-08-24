@@ -22,10 +22,16 @@ import { menu } from './menu'
 
 const attr = {
   menu,
-  onSelect: action('SELECT')
+  onSelect: action('SELECT'),
+  onFocus: action('FOCUS'),
+  onBlur: action('BLUR'),
+  onToggleExpand: action('TOGGLE_EXPAND')
 }
 
 storiesOf('ControlledMenu', module)
   .add('default', () => (
-    <ControlledMenu {...attr} />
+    <ControlledMenu {...attr}>
+      <span className='text-info mr-2'>ZenyPass</span>
+      <span className='text-success'>Connecté</span>
+    </ControlledMenu>
   ))

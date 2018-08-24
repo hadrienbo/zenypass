@@ -26,8 +26,7 @@ const automata = {
     TOGGLE_EXPAND: 'expanded'
   },
   expanded: {
-    TOGGLE_EXPAND: 'collapsed',
-    SELECT: 'collapsed'
+    TOGGLE_EXPAND: 'collapsed'
   }
 }
 

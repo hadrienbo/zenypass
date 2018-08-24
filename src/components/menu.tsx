@@ -22,9 +22,11 @@ import ControlledDropdownMenu, { MenuSpecs, MenuItemSpec } from './controlled-dr
 export interface MenuProps {
   menu: MenuSpecs
   expand: boolean
+  children
   onToggleExpand: (event: MouseEvent) => void
   onSelect: (id: string) => void
   onBlur: (event: MouseEvent) => void
+  onFocus: (event: MouseEvent) => void
 }
 
 export default function Menu ({
@@ -32,13 +34,14 @@ export default function Menu ({
   expand,
   onToggleExpand,
   onSelect,
-  onBlur
+  children
 }: MenuProps) {
   return (
-    <Navbar color='info' className='text-white' light expand='md' onBlur={onBlur}>
+    <Navbar color='info' className='text-white' light expand='md' onFocusOut={onToggleExpand}>
       <NavbarBrand href='/' />
-      <NavbarToggler onClick={onToggleExpand}/>
-      <Collapse isOpen={expand} navbar>
+      { children }
+      <NavbarToggler onClick={onToggleExpand} />
+      <Collapse isOpen={ expand } navbar onFocusIn={ onToggleExpand } >
         <Nav className='ml-auto' navbar >
           {menu.map(
             item =>
